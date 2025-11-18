@@ -3,32 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rekthub-dashboard</title>
+    <title>RektHub - Crypto Trading Dashboard</title>
   </head>
-  <body>
-    
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RektHub - Crypto Trading Dashboard</title>
-</head>
 <body class="bg-[#030712] text-white">
   
-  <div class="flex min-h-screen">
+  <div class="flex h-screen">
     
     <!-- Sidebar -->
-    <aside class="w-64 h-full bg-[#030712] border-r border-gray-800">
+    <aside class="fixed flex flex-col w-64 h-screen bg-[#030712] border-r border-gray-800">
       <!-- Sidebar content-->
-      <div class="h-18 items-center border-b border-gray-800 flex ">
-        <a class="flex items-center m-0 p-6 py-0" href="/">
-        <div class="p-1">
-          <img class="size-12" src="public/images/favicon.png">
+      <div class="h-18 w-full items-center border-b border-gray-800 flex p-6 py-0">
+        <a class="flex items-center" href="/">
+        <div class="p-1 rounded-lg ">
+          <img class="w-12" src="/images/favicon.png" alt="">
         </div>
        <span class="text-xl font-bold">RektHub</span>
        </a>
       </div>
+
+      <div class="flex flex-col justify-between h-full">
+       <nav class="flex flex-col w-full p-4">
+      <!-- Navigation links -->
+       <ul class="flex-1 space-y-2">
+        <li>
+          <a class="flex h-12 rounded-lg px-8 py-2 text-gray-300 hover:bg-gray-800 hover:text-white" href="/Home">
+            <span class="font-medium">
+              Home
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="flex h-12 rounded-lg px-8 py-2 text-gray-300 hover:bg-gray-800 hover:text-white" href="/trades">
+            <span class="font-medium">
+              Trades
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="flex h-12 rounded-lg px-8 py-2 text-gray-300 hover:bg-gray-800 hover:text-white" href="/livestreams">
+            <span class="font-medium">
+              Livestreams
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="flex h-12 rounded-lg px-8 py-2 text-gray-300 hover:bg-gray-800 hover:text-white" href="/Advanced">
+            <span class="font-medium">Advanced</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex h-12 rounded-lg px-8 py-2 text-gray-300 hover:bg-gray-800 hover:text-white"href="/chats">
+            <span class="font-medium">Chats</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex h-12 rounded-lg px-8 py-2 text-gray-300 hover:bg-gray-800 hover:text-white"href="/profile">
+            <span class="font-medium">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex h-12 rounded-lg px-8 py-2 text-gray-300 hover:bg-gray-800 hover:text-white"href="/supports">
+            <span class="font-medium">Supports</span>
+          </a>
+        </li>
+       </ul>
+      </nav>
+
+      <div class=" border-t border-gray-800 p-4">
+        <a href="/create-coin"
+          class="w-full flex items-center justify-center gap-2 rounded-xl text-white font-semibold py-3 px-4 hover:opacity-90 transition" style="background: linear-gradient(to right, #00c255, #00b45c, #00a163);">
+          <iconify-icon icon="lucide:rocket" class="w-5 h-5"></iconify-icon>
+          <span>Create Coin</span>
+        </a>
+      </div>
+      </>
 
     </aside>
     
