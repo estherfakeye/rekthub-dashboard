@@ -10,14 +10,14 @@
   <div class="flex h-screen">
     
     <!-- Sidebar -->
-    <aside class="fixed flex flex-col w-[230px] h-screen bg-[#030712] border-r border-gray-800">
+    <aside class=" flex flex-col w-[230px] h-screen bg-[#030712] border-r border-gray-800">
       <!-- Sidebar content-->
-      <div class="h-[71px] w-full items-center border-b border-gray-800 text-2xl flex p-5 py-0">
+      <div class="min-h-18 h-18 w-full border-b border-gray-800 flex p-6 py-0">
         <a class="flex items-center" href="/">
         <div class="p-1 rounded-lg ">
-          <img class="w-11" src="/images/favicon.png" alt="RektHub logo">
+          <img class="w-12" src="/images/favicon.png" alt="RektHub logo">
         </div>
-       <span class="text-lg font-bold">RektHub</span>
+       <span class="text-xl font-bold">RektHub</span>
        </a>
       </div>
 
@@ -71,8 +71,8 @@
     </aside>
     
     <!-- Main Content -->
-    <main class="absolute left-[230px] right-0 h-screen flex flex-col">
-      <div class="flex sticky top-0 h-[65px] justify-between px-5 py-0 w-full items-center border-b border-gray-800">
+    <main class="absolute left-[230px] right-0 h-screen flex-1 flex-col">
+      <div class="flex sticky top-0 min-h-18 h-18 justify-between p-5 py-0 w-full items-center border-b border-gray-800">
         <div class="flex items-center text-xl border rounded-full border-gray-800 bg-[#0b101d] px-3 py-1.5 gap-2">
           <img class="size-6 rounded-full" src="/images/avatar-degen-ape.png" alt="User Avatar">
           <div class="tracking-wide items-center flex gap-1">
@@ -83,11 +83,11 @@
         </div>
         <div class="flex items-center gap-3">
           <a href="/create-coin"
-          class="w-full flex items-center justify-center gap-1 text-lg whitespace-nowrap rounded-lg text-white font-thin tracking-tight p-1.5 hover:opacity-90 transition" style="background: linear-gradient(to right, #00c255, #00b45c, #00a163);">
+          class="w-full flex items-center justify-center gap-1 text-sm whitespace-nowrap rounded-lg text-white px-3 py-1.5 hover:opacity-90 transition" style="background: linear-gradient(to right, #00c255, #00b45c, #00a163);">
           <iconify-icon icon="lucide:rocket" class="text-sm"></iconify-icon>
           <span>Create Coin</span>
         </a>
-        <button class="flex items-center text-green-400 gap-2 font-thin border border-green-400 rounded-lg p-1.5">
+        <button class="flex items-center text-green-400 gap-2 text-sm border border-green-400 rounded-lg px-3 py-1.5">
           <iconify-icon icon="lucide:user" class="text-base justify-between"></iconify-icon>
           Login
         </button>
@@ -95,6 +95,208 @@
       </div>
       <div class="p-8 overflow-y-auto h-[calc(100vh-4.69rem)]">
         <!-- Main content goes here -->
+         <section class="pb-12">
+          <div class="mx-auto w-full">
+            <div class="flex items-center justify-between mb-8">
+              <h2 class="text-2xl font-bold flex items-center gap-2">
+                <iconify-icon icon="lucide:flame" class="size-7 items-center text-orange-500"></iconify-icon>
+                Trending Now
+              </h2>
+              <div class="flex gap-2">
+                <button class="flex size-10 items-center justify-center rounded-full border border-gray-800 text-gray-400 hover:bg-gray-800 ">
+                  <iconify-icon icon="carbon:chevron-left"class="size-5"></iconify-icon>
+                </button>
+                  <button class="flex size-10 items-center justify-center rounded-full border border-gray-800 text-gray-400 hover:bg-gray-800 ">
+                  <iconify-icon icon="carbon:chevron-right" class="size-5"></iconify-icon>
+                </button>
+              </div>
+            </div>
+
+
+            <div class="flex gap-6 overflow-x-auto">
+                <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
+                  <div class="flex items-center justify-between pb-3 px-6">
+                    <div class="flex items-center gap-3">
+                      <div class="relative size-fit">
+                        <img class="size-10 " src="/images/lorem.png" alt="lorem"/>
+                        <img class="absolute -right-1 -bottom-1 size-5 rounded-full border border-gray-800" src="/images/So1111111111111111.png" alt="sol"/>
+                      </div>
+                      <div class="font-semibold text-white text-lg">Lorem
+                      <span class="text-sm text-gray-400 font-semibold block">BSC</span>
+                      </div>
+                    </div>
+                    <iconify-icon icon="lucide:snowflake" class="text-blue-400"></iconify-icon>
+                  </div>
+                  <div class="flex items-center justify-between px-6 mb-2">
+                    <span class="text-2xl font-bold">$0.00000362</span>
+                    <span class="text-sm font-medium md:text-base text-blue-400">0%</span>
+                  </div>
+                  <div class="text-sm text-gray-400 px-6">
+                    Market Cap: $3.62k
+                  </div>
+              </div>
+              <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
+                  <div class="flex items-center justify-between pb-3 px-6">
+                    <div class="flex items-center gap-3">
+                      <div class="relative size-fit">
+                        <img class="size-10 rounded-full object-cover" src="/images/gRekt.png" alt="gRekt"/>
+                        <img class="absolute -right-1 -bottom-1 size-5 rounded-full border border-gray-800" src="/images/So1111111111111111.png" alt="sol"/>
+                      </div>
+                      <div class="font-semibold text-white text-lg">gREKT
+                      <span class="text-sm text-gray-400 font-semibold block">GREKT</span>
+                      </div>
+                    </div>
+                    <iconify-icon icon="lucide:snowflake" class="text-blue-400"></iconify-icon>
+                  </div>
+                  <div class="flex items-center justify-between px-6 mb-2">
+                    <span class="text-2xl font-bold">$0.00000362</span>
+                    <span class="text-sm font-medium md:text-base text-blue-400">0%</span>
+                  </div>
+                  <div class="text-sm text-gray-400 px-6">
+                    Market Cap: $3.62k
+                  </div>
+              </div>
+              <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
+                  <div class="flex items-center justify-between pb-3 px-6">
+                    <div class="flex items-center gap-3">
+                      <div class="relative size-fit">
+                        <img class="size-10" src="/images/favicon.png" alt="Dogecoin"/>
+                        <img class="absolute -right-1 -bottom-1 size-5 rounded-full border border-gray-800" src="/images/ethereum.svg" alt="sol"/>
+                      </div>
+                      <div class="font-semibold text-white text-lg">Doge
+                      <span class="text-sm text-gray-400 font-semibold block">GREKT</span>
+                      </div>
+                    </div>
+                    <iconify-icon icon="lucide:snowflake" class="text-blue-400"></iconify-icon>
+                  </div>
+                  <div class="flex items-center justify-between px-6 mb-2">
+                    <span class="text-2xl font-bold">$0.00000028</span>
+                    <span class="text-sm font-medium md:text-base text-blue-400">0%</span>
+                  </div>
+                  <div class="text-sm text-gray-400 px-6">
+                    Market Cap: $0.39k
+                  </div>
+              </div> 
+              <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
+                  <div class="flex items-center justify-between pb-3 px-6">
+                    <div class="flex items-center gap-3">
+                      <div class="relative bg-black rounded-full">
+                        <img class="size-10" src="/images/favicon.png" alt="TestEth"/>
+                        <img class="absolute -right-1 -bottom-1 size-5 rounded-full border border-gray-800" src="/images/ethereum.svg" alt="sol"/>
+                      </div>
+                      <div class="font-semibold text-white text-lg">TestEth
+                      <span class="text-sm text-gray-400 font-semibold block">ETH</span>
+                      </div>
+                    </div>
+                    <iconify-icon icon="lucide:snowflake" class="text-blue-400"></iconify-icon>
+                  </div>
+                  <div class="flex item-center justify-between px-6 mb-2">
+                    <span class="text-2xl font-bold">$0.00000000</span>
+                    <span class="text-sm font-medium md:text-base text-blue-400">0%</span>
+                  </div>
+                  <div class="text-sm text-gray-400 px-6">
+                    Market Cap: $0
+                  </div>
+              </div>
+              <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
+                <div class="flex items-center justify-between pb-3 px-6">
+                  <div class="flex items-center gap-3">
+                    <div class="relative size-fit">
+                      <img class="size-10 rounded-full items-center" src="/images/RektHub.webp" alt="Dogecoin"/>
+                      <img class="absolute -right-1 -bottom-1 size-5 rounded-full border border-gray-800" src="/images/ethereum.svg" alt="sol"/>
+                    </div>
+                    <div class="font-semibold text-white text-lg">gREKT
+                    <span class="text-sm text-gray-400 font-semibold block">GREKT</span>
+                    </div>
+                  </div>
+                  <iconify-icon icon="lucide:snowflake" class="text-blue-400"></iconify-icon>
+                </div>
+                <div class="flex items-center justify-between px-6 mb-2">
+                  <span class="text-2xl font-bold">$0.00000000</span>
+                  <span class="text-sm font-medium md:text-base text-blue-400">0%</span>
+                </div>
+                <div class="text-sm text-gray-400 px-6">
+                  Market Cap: $39.19k
+                </div>
+              </div>
+              <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
+                  <div class="flex items-center justify-between pb-3 px-6">
+                    <div class="flex items-center gap-3">
+                      <div class="relative size-fit">
+                        <img class="size-10 rounded-full" src="/images/final-test.webp" alt="FTEST"/>
+                        <img class="absolute -right-1 -bottom-1 size-5 rounded-full border border-gray-800" src="/images/ethereum.svg" alt="sol"/>
+                      </div>
+                      <div class="font-semibold text-white text-lg">FinalTest
+                      <span class="text-sm text-gray-400 font-semibold block">FTEST</span>
+                      </div>
+                    </div>
+                    <iconify-icon icon="lucide:snowflake" class="text-blue-400"></iconify-icon>
+                  </div>
+                  <div class="flex item-center justify-between px-6 mb-2">
+                    <span class="text-2xl font-bold">$0.00003924</span>
+                    <span class="text-sm font-medium md:text-base text-blue-400">0%</span>
+                  </div>
+                  <div class="text-sm text-gray-400 px-6">
+                    Market Cap: $39.19k
+                  </div>
+              </div> 
+              <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
+                  <div class="flex items-center justify-between pb-3 px-6">
+                    <div class="flex items-center gap-3">
+                      <div class="relative size-fit">
+                        <img class="size-10 rounded-full" src="/images/favicon.png" alt="Dogecoin"/>
+                        <img class="absolute -right-1 -bottom-1 size-5 rounded-full border border-gray-800" src="/images/ethereum.svg" alt="sol"/>
+                      </div>
+                      <div class="font-semibold text-white text-lg">DOGE
+                      <span class="text-sm text-gray-400 font-semibold block">JON</span>
+                      </div>
+                    </div>
+                    <iconify-icon icon="lucide:snowflake" class="text-blue-400"></iconify-icon>
+                  </div>
+                  <div class="flex items-center justify-between px-6 mb-2">
+                    <span class="text-2xl font-bold">$0.00003924</span>
+                    <span class="text-sm font-medium md:text-base text-blue-400">0%</span>
+                  </div>
+                  <div class="text-sm text-gray-400 px-6">
+                    Market Cap: $39.19k
+                  </div>
+              </div>
+              <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
+                <div class="flex items-center justify-between pb-3 px-6">
+                  <div class="flex items-center gap-3">
+                    <div class="relative size-fit">
+                      <img class="size-10 rounded-full" src="/images/favicon.png" alt="Dogecoin"/>
+                      <img class="absolute -right-1 -bottom-1 size-5 rounded-full border border-gray-800" src="/images/ethereum.svg" alt="sol"/>
+                    </div>
+                    <div class="font-semibold text-white text-lg">gREKT
+                    <span class="text-sm text-gray-400 font-semibold block">ETH</span>
+                    </div>
+                  </div>
+                  <iconify-icon icon="lucide:snowflake" class="text-blue-400"></iconify-icon>
+                </div>
+                <div class="flex items-center justify-between px-6 mb-2">
+                  <span class="text-2xl font-bold">$0.00000028</span>
+                  <span class="text-sm font-medium md:text-base text-blue-400">0%</span>
+                </div>
+                <div class="text-sm text-gray-400 px-6">
+                  Market Cap: $391.86k
+                </div>
+              </div>
+            </div>    
+          </div>
+         </section>
+
+         <div class="relative mb-6 flex flex-nowrap items-center justify-between gap-3">
+          <h2 class="flex text-2xl font-bold gap-2  items-center text-white">
+            <iconify-icon icon="lucide:rocket" class="size-7 text-green-500"></iconify-icon>
+            Just Lunched
+          </h2>
+          <div class="relative flex w-auto items-center ">
+            <input class="pl-10 py-2 text-base border border-gray-800 focus:outline-none rounded-full" placeholder="Search Tokens">
+            <iconify-icon icon="iconamoon:search" class="absolute left-4 size-5 text-gray-400"></iconify-icon>
+            </input>
+          </div>
+         </div>
 
       </div>
     </main>
