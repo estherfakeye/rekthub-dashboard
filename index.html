@@ -21,9 +21,9 @@
        </a>
       </div>
 
-      <div class="flex flex-col justify-between h-full">
-       <nav class="flex flex-col w-full p-4 gap-2.5 flex-1">
-      <!-- Navigation links -->
+      <div class="flex flex-col justify-between flex-1">
+        <nav class="flex flex-col w-full p-4 gap-2.5">
+          <!-- Navigation links -->
           <a class="flex rounded-lg px-3 py-2 gap-3 text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/Home">
             <iconify-icon icon="si:home-line" class="text-base justify-between " ></iconify-icon>
             <span class="light">
@@ -58,27 +58,27 @@
             <iconify-icon icon="fe:question" class="text-base justify-between"></iconify-icon>
             <span class="font-medium">Supports</span>
           </a>
-      </nav>
+        </nav>
 
-      <div class=" border-t border-gray-800 p-3">
-        <a href="/create-coin"
-          class="w-full flex items-center justify-center gap-1 rounded-xl text-white font-semibold py-2 px-3 hover:opacity-90 transition" style="background: linear-gradient(to right, #00c255, #00b45c, #00a163);">
-          <iconify-icon icon="lucide:rocket" class="text-lg"></iconify-icon>
-          <span>Create Coin</span>
-        </a>
+        <div class=" border-t border-gray-800 p-3">
+          <a href="/create-coin"
+            class="w-full flex items-center justify-center gap-1 rounded-xl text-white font-semibold py-2 px-3 hover:opacity-90 transition" style="background: linear-gradient(to right, #00c255, #00b45c, #00a163);">
+            <iconify-icon icon="lucide:rocket" class="text-lg"></iconify-icon>
+            <span>Create Coin</span>
+          </a>
+        </div>
       </div>
-
     </aside>
     
     <!-- Main Content -->
-    <main class="absolute left-[230px] right-0 h-screen flex-1 flex-col">
-      <div class="flex sticky top-0 min-h-18 h-18 justify-between p-5 py-0 w-full items-center border-b border-gray-800">
+    <main class="overflow-hidden h-screen flex-1 flex flex-col">
+      <div class="flex sticky z-10 bg-[#030712] top-0 min-h-18 h-18 justify-between p-5 py-0 w-full items-center border-b border-gray-800">
         <div class="flex items-center text-xl border rounded-full border-gray-800 bg-[#0b101d] px-3 py-1.5 gap-2">
           <img class="size-6 rounded-full" src="/images/avatar-degen-ape.png" alt="User Avatar">
-          <div class="tracking-wide items-center flex gap-1">
+          <div class="items-center flex gap-1">
             <span class="text-xs font-medium text-green-400">PaperViking200🧊</span>
             <span class="text-xs text-gray-200 ">created</span>
-            <span class="text-xs font-medium text-blue-400">GREKT</span>
+            <span class="text-xs font-medium text-blue-400">ZOL</span>
           </div>
         </div>
         <div class="flex items-center gap-3">
@@ -93,10 +93,10 @@
         </button>
         </div>
       </div>
-      <div class="p-8 overflow-y-auto h-[calc(100vh-4.69rem)]">
+      <div class="flex-1 p-8 overflow-y-auto">
         <!-- Main content goes here -->
-         <section class="pb-12">
-          <div class="mx-auto w-full">
+        <section class="pb-12">
+          <div class="mx-auto w-full p-6 px-6">
             <div class="flex items-center justify-between mb-8">
               <h2 class="text-2xl font-bold flex items-center gap-2">
                 <iconify-icon icon="lucide:flame" class="size-7 items-center text-orange-500"></iconify-icon>
@@ -114,7 +114,7 @@
 
 
             <div class="flex gap-6 overflow-x-auto">
-                <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
+              <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
                   <div class="flex items-center justify-between pb-3 px-6">
                     <div class="flex items-center gap-3">
                       <div class="relative size-fit">
@@ -284,21 +284,52 @@
               </div>
             </div>    
           </div>
-         </section>
+        </section>
 
-         <div class="relative mb-6 flex flex-nowrap items-center justify-between gap-3">
-          <h2 class="flex text-2xl font-bold gap-2  items-center text-white">
+        <div class="relative mb-6 flex items-center justify-between">
+          <h2 class="flex text-2xl font-bold gap-2 items-center text-white">
             <iconify-icon icon="lucide:rocket" class="size-7 text-green-500"></iconify-icon>
             Just Lunched
           </h2>
-          <div class="relative flex w-auto items-center ">
-            <input class="pl-10 py-2 text-base border border-gray-800 focus:outline-none rounded-full" placeholder="Search Tokens">
-            <iconify-icon icon="iconamoon:search" class="absolute left-4 size-5 text-gray-400"></iconify-icon>
-            </input>
-          </div>
-         </div>
 
+          <div class="relative flex w-auto items-center ">
+            <input class="pl-10 py-2 text-base border border-gray-800 focus:outline-none rounded-full" placeholder="Search Tokens"/>
+            <iconify-icon icon="iconamoon:search" class="absolute left-4 size-5 text-gray-400"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="grid gap-6 overflow-y-hidden grid-cols-[repeat(auto-fill,minmax(350px,1fr))]">
+
+          <div class="flex flex-col gap-6 p-5 border border-gray-800 rounded-3xl hover:bg-gray-900">
+            <div class="mb-4 flex items-start justify-between">
+              <div class="flex items-center space-x-3">
+                <img src="/images/zolana.webp" alt="Zolana" class="size-15 rounded-xl object-cover object-center"/>
+                <div>
+                  <h3 class="flex items-center gap-1 font-semibold text-white text-lg">
+                    <img src="/images/So1111111111111111.png" alt="Solana" class="size-5 rounded-full border border-gray-700 "/>
+                    Zolana 
+                  </h3>
+                  <p class="text-sm text-gray-400">(ZOL)</p>
+                </div>
+              </div>
+              <a href="/">
+                <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium">
+                  <iconify icon="lucide:external-link" class="size-4"></iconify>
+                </button>
+              </a>
+            </div>
+            <div class="mb-3 flex items-center space-x-2">
+              <span class="text-xs text-gray-400 md:text-sm">Creator</span>
+              <span class="relative flex size-8 shrink-0 overflow-hidden rounded-full h-5 w-5">
+                <img src="/images/avatar-degen-ape.png" alt="Creator Avatar" class="size-full bg-gray-700"/>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
+
+
+
     </main>
     
   </div>    
