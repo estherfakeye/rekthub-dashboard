@@ -8,9 +8,15 @@
 <body class="bg-[#030712] text-white">
   
   <div class="flex h-screen">
+    <button id="mobile-menu-btn" class="lg:hidden fixed top-5 left-4 z-50 p-2 text-white bg-gray-800/50 rounded-lg">
+      <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div id="mobile-overlay" class="lg:hidden hidden fixed inset-0 bg-black/50 z-40"></div>
     
     <!-- Sidebar -->
-    <aside class=" flex flex-col w-[230px] h-screen bg-[#030712] border-r border-gray-800">
+    <aside id="sidebar" class="flex flex-col w-[230px] h-screen bg-[#030712] border-r border-gray-800  fixed lg:relative z-50 -translate-x-full lg:translate-x-0 transition-transform duration-300">
       <!-- Sidebar content-->
       <div class="min-h-18 h-18 w-full border-b border-gray-800 flex p-6 py-0">
         <a class="flex items-center" href="/">
@@ -42,7 +48,7 @@
               Livestreams
             </span>
           </a>
-          <a class="flex rounded-lg px-3 py-2 gap-3  text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/Advanced">
+          <a class="flex ounded-lg px-3 py-2 gap-3  text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/Advanced">
             <iconify-icon icon="codicon:gear" class="text-base justify-between"></iconify-icon>
             <span class="font-medium">Advanced</span>
           </a>
@@ -93,7 +99,7 @@
         </button>
         </div>
       </div>
-      <div class="flex-1 overflow-y-auto">
+      <div class="flex-1 overflow-y-auto no-scrollbar">
         <!-- Main content goes here -->
         
           <div class="mx-auto w-full p-6 px-6">
@@ -103,16 +109,16 @@
                 Trending Now
               </h2>
               <div class="flex gap-2">
-                <button class="flex size-10 items-center justify-center rounded-full border border-gray-800 text-gray-400 hover:bg-gray-800 ">
+                <button id="scroll-left" class="flex size-10 items-center justify-center rounded-full border border-gray-800 text-gray-400 hover:bg-gray-800 ">
                   <iconify-icon icon="carbon:chevron-left"class="size-5"></iconify-icon>
                 </button>
-                  <button class="flex size-10 items-center justify-center rounded-full border border-gray-800 text-gray-400 hover:bg-gray-800 ">
+                  <button id="scroll-right" class="flex size-10 items-center justify-center rounded-full border border-gray-800 text-gray-400 hover:bg-gray-800 ">
                   <iconify-icon icon="carbon:chevron-right" class="size-5"></iconify-icon>
                 </button>
               </div>
             </div>
             <section class="pb-12">
-              <div class="flex gap-6 overflow-x-auto">
+              <div  id="trending-scroll"  class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth ">
                 <div class="flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[340px] shadow-sm">
                     <div class="flex items-center justify-between pb-3 px-6">
                       <div class="flex items-center gap-3">
