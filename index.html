@@ -8,9 +8,6 @@
 <body class="bg-[#030712] text-white">
   
   <div class="flex h-screen">
-    <button id="mobile-menu-btn" class="lg:hidden fixed top-5 left-4 z-50 p-2 text-white bg-gray-800/50 rounded-lg">
-      <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
-    </button>
 
     <!-- Mobile Overlay -->
     <div id="mobile-overlay" class="lg:hidden hidden fixed inset-0 bg-black/50 z-40"></div>
@@ -18,9 +15,9 @@
     <!-- Sidebar -->
     <aside id="sidebar" class="flex flex-col w-[230px] h-screen bg-[#030712] border-r border-gray-800  fixed lg:relative z-50 -translate-x-full lg:translate-x-0 transition-transform duration-300">
       <!-- Sidebar content-->
-      <div class="min-h-18 h-18 w-full border-b border-gray-800 flex p-6 py-0">
+      <div class="min-h-16 h-16 w-full border-b border-gray-800 flex p-6 py-0">
         <a class="flex items-center" href="/">
-        <div class="p-1 rounded-lg ">
+        <div class="p-1 rounded-lg backdrop-blur-3xl">
           <img class="w-12" src="/images/favicon.png" alt="RektHub logo">
         </div>
        <span class="text-xl font-bold">RektHub</span>
@@ -32,7 +29,7 @@
           <!-- Navigation links -->
           <a class="flex rounded-lg px-3 py-2 gap-3 text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/Home">
             <iconify-icon icon="si:home-line" class="text-base justify-between " ></iconify-icon>
-            <span class="light">
+            <span class="font-medium">
               Home
             </span>
           </a>
@@ -78,7 +75,7 @@
     
     <!-- Main Content -->
     <main class="overflow-hidden h-screen flex-1 flex flex-col">
-      <div class="flex sticky z-10 bg-[#030712] top-0 min-h-18 h-18 justify-between p-5 py-0 w-full items-center border-b border-gray-800">
+      <div class="sticky top-0 z-50 flex min-h-16 h-16 justify-between items-center border-b border-gray-800 bg-gray-950 px-4 md:px-6">
         <div class="hidden md:flex items-center text-xl border rounded-full border-gray-800 bg-[#0b101d] px-3 py-1.5 gap-2">
           <img class="size-6 rounded-full" src="/images/avatar-degen-ape.png" alt="User Avatar">
           <div class="items-center flex gap-1">
@@ -120,26 +117,26 @@
                 </button>
               </div>
             </div>
-            <section class="pb-8 md:pb-12">
+            <section class="pb-12">
               <div  id="trending-scroll"  class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth ">
-                <div class="flex flex-col border border-gray-800 rounded-2xl py-4 md:py-5 w-full md:min-w-[340px] shadow-sm">
-                    <div class="flex items-center justify-between pb-2 md:pb-3 px-4 md:px-6">
-                      <div class="flex items-center gap-2 md:gap-3">
+                <div class="shrink-0 flex flex-col border border-gray-800 rounded-2xl py-5 min-w-[300px] sm:min-w-[320px] md:min-w-[340px] shadow-sm">
+                    <div class="flex items-center justify-between pb-3 px-6">
+                      <div class="flex items-center gap-3">
                         <div class="relative size-fit">
-                          <img class="size-8 md:size-10 " src="/images/lorem.png" alt="lorem"/>
-                          <img class="absolute -right-1 -bottom-1 size-4 md:size-5 rounded-full border border-gray-800" src="/images/So1111111111111111.png" alt="sol"/>
+                          <img class="size-10 " src="/images/lorem.png" alt="lorem"/>
+                          <img class="absolute -right-1 -bottom-1 size-5 rounded-full border border-gray-800" src="/images/So1111111111111111.png" alt="sol"/>
                         </div>
-                        <div class="font-semibold text-white text-base md:text-lg">Lorem
-                        <span class="text-xs md:text-sm text-gray-400 font-semibold block">BSC</span>
+                        <div class="font-semibold text-white text-lg">Lorem
+                        <span class="text-sm text-gray-400 font-semibold block">BSC</span>
                         </div>
                       </div>
                       <iconify-icon icon="lucide:snowflake" class="text-blue-400"></iconify-icon>
                     </div>
-                    <div class="flex items-center justify-between px-4 md:px-6 mb-1 md:mb-2">
-                      <span class="text-xl md:text-2xl font-bold">$0.00000362</span>
+                    <div class="flex items-center justify-between px-6 mb-2">
+                      <span class="text-2xl font-bold">$0.00000362</span>
                       <span class="text-sm font-medium md:text-base text-blue-400">0%</span>
                     </div>
-                    <div class="text-xs md:text-sm text-gray-400 px-4 md:px-6">
+                    <div class="text-sm text-gray-400 px-6">
                       Market Cap: $3.62k
                     </div>
                 </div>
