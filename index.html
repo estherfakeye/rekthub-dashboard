@@ -13,10 +13,10 @@
     <div id="mobile-overlay" class="lg:hidden hidden fixed inset-0 bg-black/50 z-40"></div>
     
     <!-- Sidebar -->
-    <aside id="sidebar" class="flex flex-col w-[230px] h-screen bg-[#030712] border-r border-gray-800  fixed lg:relative z-50 -translate-x-full lg:translate-x-0 transition-transform duration-300">
+    <aside id="sidebar" class="flex flex-col w-[230px] h-screen bg-[#030712] border-r border-gray-800  fixed lg:relative z-60 -translate-x-full lg:translate-x-0 transition-transform duration-300">
       <!-- Sidebar content-->
-      <div class="min-h-16 h-16 w-full border-b border-gray-800 flex items-center justify-between px-4">
-        <a class="flex items-center gap-2" href="/">
+      <div class="min-h-16 h-16 w-full border-b border-gray-800/50 flex items-center justify-between px-4">
+        <a class="flex items-center" href="/">
         <div class="p-1 rounded-lg backdrop-blur-3xl">
           <img class="w-12" src="/images/favicon.png" alt="RektHub logo">
         </div>
@@ -67,9 +67,9 @@
           </a>
         </nav>
 
-        <div class=" border-t border-gray-800 p-3">
+        <div class=" border-t border-gray-800/50 p-4">
           <a href="/create-coin"
-            class="w-full flex items-center justify-center gap-1 rounded-xl text-white font-semibold py-2 px-3 hover:opacity-90 transition" style="background: linear-gradient(to right, #00c255, #00b45c, #00a163);">
+            class="w-full flex items-center justify-center gap-1 rounded-xl text-white font-semibold py-2 px-3 hover:opacity-90 transition-all" style="background: linear-gradient(to right, #00c255, #00b45c, #00a163);">
             <iconify-icon icon="lucide:rocket" class="text-lg"></iconify-icon>
             <span>Create Coin</span>
           </a>
