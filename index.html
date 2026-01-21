@@ -10,69 +10,71 @@
   <div class="flex h-screen">
 
     <!-- Mobile Overlay -->
-    <div id="mobile-overlay" class="lg:hidden hidden fixed inset-0 bg-black/50 z-40"></div>
+    <div id="mobile-overlay" class="lg:hidden hidden fixed inset-0 bg-black/60 z-50"></div>
     
     <!-- Sidebar -->
-    <aside id="sidebar" class="flex flex-col w-[230px] h-screen bg-[#030712] border-r border-gray-800  fixed lg:relative z-60 -translate-x-full lg:translate-x-0 transition-transform duration-300">
-      <!-- Sidebar content-->
-      <div class="min-h-16 h-16 w-full border-b border-gray-800/50 flex items-center justify-between px-4">
-        <a class="flex items-center" href="/">
-        <div class="p-1 rounded-lg backdrop-blur-3xl">
-          <img class="w-12" src="/images/favicon.png" alt="RektHub logo">
+    <aside id="sidebar" class="fixed top-4 bottom-4 lg:top-0 left-0 lg:bottom-0  w-[230px] -translate-x-full lg:translate-x-0 transition-transform duration-300 z-60 lg:relative lg:h-auto">
+      <div class="ml-4 mt-4 mb-4 lg:ml-0 lg:mt-0 lg:mb-0 h-auto lg:h-full lg:pb-0 flex flex-col bg-black/30 backdrop-blur-md lg:bg-[#030712] border rounded-2xl lg:rounded-none border-gray-800">
+        <!-- Sidebar content-->
+        <div class="min-h-16 h-16 w-full border-b border-gray-800/50 flex items-center justify-between px-4">
+          <a class="flex items-center" href="/">
+          <div class="p-1 rounded-lg backdrop-blur-3xl">
+            <img class="w-12" src="/images/favicon.png" alt="RektHub logo">
+          </div>
+        <span class="text-xl font-bold">RektHub</span>
+        </a>
+          <!--mobile close button-->
+          <button id="mobile-close-btn" class="lg:hidden text-gray-400 hover:text-white">
+            <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+          </button>
         </div>
-       <span class="text-xl font-bold">RektHub</span>
-       </a>
-        <!--mobile close button-->
-         <button id="mobile-close-btn" class="lg:hidden text-gray-400 hover:text-white">
-          <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
-         </button>
-      </div>
 
-      <div class="flex flex-col justify-between flex-1">
-        <nav class="flex flex-col w-full p-4 gap-2.5">
-          <!-- Navigation links -->
-          <a class="flex rounded-lg px-3 py-2 gap-3 text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/Home">
-            <iconify-icon icon="si:home-line" class="text-base justify-between " ></iconify-icon>
-            <span class="font-medium">
-              Home
-            </span>
-          </a>
-          <a class="flex rounded-lg px-3 py-2 gap-3 text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/trades">
-            <iconify-icon icon="mdi:chart-line" class="text-base justify-between"></iconify-icon>
-            <span class="font-medium">
-              Trades
-            </span>
-          </a>
-          <a class="flex rounded-lg py-2 px-3  gap-3  text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/livestreams">
-            <iconify-icon icon="hugeicons:live-streaming-02" class="text-base justify-between"></iconify-icon>
-            <span class="font-medium">
-              Livestreams
-            </span>
-          </a>
-          <a class="flex ounded-lg px-3 py-2 gap-3  text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/Advanced">
-            <iconify-icon icon="codicon:gear" class="text-base justify-between"></iconify-icon>
-            <span class="font-medium">Advanced</span>
-          </a>
-          <a class="flex rounded-lg px-3 py-2 gap-3  text-gray-200 items-center hover:bg-gray-800 hover:text-white"href="/chats">
-            <iconify-icon icon="mage:message-round" class="text-base justify-between"></iconify-icon>
-            <span class="font-medium">Chats</span>
-          </a>
-          <a class="flex rounded-lg px-3 py-2 gap-3  text-gray-200 items-center hover:bg-gray-800 hover:text-white"href="/profile">
-            <iconify-icon icon="lucide:user" class="text-base justify-between"></iconify-icon>
-            <span class="font-medium">Profile</span>
-          </a>
-          <a class="flex rounded-lg px-3 py-2 gap-3 text-gray-200 items-center hover:bg-gray-800 hover:text-white"href="/supports">
-            <iconify-icon icon="fe:question" class="text-base justify-between"></iconify-icon>
-            <span class="font-medium">Supports</span>
-          </a>
-        </nav>
+        <div class="flex flex-col justify-between lg:flex-1 min-h-0">
+          <nav class="flex flex-col w-full p-4 gap-2.5">
+            <!-- Navigation links -->
+            <a class="flex rounded-lg px-3 py-2 gap-3 text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/Home">
+              <iconify-icon icon="si:home-line" class="text-base justify-between " ></iconify-icon>
+              <span class="font-medium">
+                Home
+              </span>
+            </a>
+            <a class="flex rounded-lg px-3 py-2 gap-3 text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/trades">
+              <iconify-icon icon="mdi:chart-line" class="text-base justify-between"></iconify-icon>
+              <span class="font-medium">
+                Trades
+              </span>
+            </a>
+            <a class="flex rounded-lg py-2 px-3  gap-3  text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/livestreams">
+              <iconify-icon icon="hugeicons:live-streaming-02" class="text-base justify-between"></iconify-icon>
+              <span class="font-medium">
+                Livestreams
+              </span>
+            </a>
+            <a class="flex ounded-lg px-3 py-2 gap-3  text-gray-200 items-center hover:bg-gray-800 hover:text-white" href="/Advanced">
+              <iconify-icon icon="codicon:gear" class="text-base justify-between"></iconify-icon>
+              <span class="font-medium">Advanced</span>
+            </a>
+            <a class="flex rounded-lg px-3 py-2 gap-3  text-gray-200 items-center hover:bg-gray-800 hover:text-white"href="/chats">
+              <iconify-icon icon="mage:message-round" class="text-base justify-between"></iconify-icon>
+              <span class="font-medium">Chats</span>
+            </a>
+            <a class="flex rounded-lg px-3 py-2 gap-3  text-gray-200 items-center hover:bg-gray-800 hover:text-white"href="/profile">
+              <iconify-icon icon="lucide:user" class="text-base justify-between"></iconify-icon>
+              <span class="font-medium">Profile</span>
+            </a>
+            <a class="flex rounded-lg px-3 py-2 gap-3 text-gray-200 items-center hover:bg-gray-800 hover:text-white"href="/supports">
+              <iconify-icon icon="fe:question" class="text-base justify-between"></iconify-icon>
+              <span class="font-medium">Supports</span>
+            </a>
+          </nav>
 
-        <div class=" border-t border-gray-800/50 p-4">
-          <a href="/create-coin"
-            class="w-full flex items-center justify-center gap-1 rounded-xl text-white font-semibold py-2 px-3 hover:opacity-90 transition-all" style="background: linear-gradient(to right, #00c255, #00b45c, #00a163);">
-            <iconify-icon icon="lucide:rocket" class="text-lg"></iconify-icon>
-            <span>Create Coin</span>
-          </a>
+          <div class=" border-t border-gray-800/50 p-4">
+            <a href="/create-coin"
+              class="w-full flex items-center justify-center gap-1 rounded-xl text-white font-semibold py-2 px-3 hover:opacity-90 transition-all" style="background: linear-gradient(to right, #00c255, #00b45c, #00a163);">
+              <iconify-icon icon="lucide:rocket" class="text-lg"></iconify-icon>
+              <span>Create Coin</span>
+            </a>
+          </div>
         </div>
       </div>
     </aside>
@@ -115,7 +117,7 @@
       <div class="flex-1 overflow-y-auto no-scrollbar px-4 md:px-0">
         <!-- Main content goes here -->
         
-          <div class="mx-auto w-full p-4 md:p-6">
+          <div class="mx-auto w-full p-4 md:p-6 min-w-0">
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6 md:mb-8 gap-4">
               <h2 class="text-xl md:text-2xl font-bold flex items-center gap-2">
                 <iconify-icon icon="lucide:flame" class="size-6 md:size-7 items-center text-orange-500"></iconify-icon>
@@ -302,14 +304,14 @@
                 </div>
               </div>
             </section>
-            <div class="relative mb-6 flex items-center justify-between">
+            <div class="relative mb-6 flex flex-col md:flex-row items-start md:items-center justify-between">
               <h2 class="flex text-2xl font-bold gap-2 items-center text-white">
-                <iconify-icon icon="lucide:rocket" class="size-7 text-green-500"></iconify-icon>
+                <iconify-icon icon="lucide:rocket" class="size-6 lg:size-7 text-green-500"></iconify-icon>
                 Just Launched
               </h2>
 
-              <div class="relative flex w-[420px] items-center ">
-                <input class="pl-10 py-2 text-base w-full border border-gray-800 focus:outline-none rounded-full" placeholder="Search Tokens"/>
+              <div class="relative flex w-full md:w-[420px] items-center ">
+                <input class="pl-10 py-2 text-sm md:text-base w-full border border-gray-800 focus:outline-none rounded-full" placeholder="Search Tokens"/>
                 <iconify-icon icon="iconamoon:search" class="absolute left-4 size-5 text-gray-400"></iconify-icon>
               </div>
             </div>
